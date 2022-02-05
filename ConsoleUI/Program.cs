@@ -9,7 +9,9 @@ foreach (var product in productManager.GetAllByCategoryId(1))
 {
     Console.WriteLine(product.ProductName);
 }
+
 Console.WriteLine("----------------------------------------------------------------------");
+
 foreach (var item in productManager.GetByUnitPrice(10,15))
 {
     Console.WriteLine(item.ProductId);
